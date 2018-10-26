@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mrE-Hk-PjU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--YellowVC-->
+        <scene sceneID="sS5-2F-AzF">
+            <objects>
+                <viewController id="kmD-Kk-FST" customClass="YellowVC" customModule="UIImageZooming" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UQd-9Q-X3D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="imageButton" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xT-xp-Woj" customClass="imageButton">
+                                <rect key="frame" x="102.5" y="330.5" width="170" height="70"/>
+                                <color key="backgroundColor" red="0.87073683375634514" green="0.45828237223274354" blue="0.12566849884597442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="AIF-M0-dQD"/>
+                                    <constraint firstAttribute="height" constant="70" id="qsf-Df-mXc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="37"/>
+                                <size key="titleShadowOffset" width="0.0" height="-1"/>
+                                <state key="normal" title="Image Zoom">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="imageZoom:" destination="OgH-J7-LQe" eventType="touchUpInside" id="txT-qn-nZL"/>
+                                    <segue destination="f8v-xQ-oJ4" kind="show" id="Vv9-eh-a76"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeE-XA-bXy">
+                                <rect key="frame" x="102.5" y="240.5" width="170" height="70"/>
+                                <color key="backgroundColor" red="0.8707368338" green="0.45828237220000001" blue="0.1256684988" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="bfM-2h-5jA"/>
+                                    <constraint firstAttribute="width" constant="170" id="dzH-Ac-mJ0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="37"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="2"/>
+                                <state key="normal" title="Auto Layout ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0Qr-um-gJ9" kind="show" id="pxS-Xb-aHj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKm-tA-Z3x">
+                                <rect key="frame" x="102.5" y="420.5" width="170" height="70"/>
+                                <color key="backgroundColor" red="0.8707368338" green="0.45828237220000001" blue="0.1256684988" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="5ZJ-8T-kdj"/>
+                                    <constraint firstAttribute="width" constant="170" id="oXH-HE-h70"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="37"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Manual"/>
+                                <connections>
+                                    <segue destination="jdp-h1-ukU" kind="show" id="Z9P-Zs-GpL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.95103874998800753" blue="0.32016848451251623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4xT-xp-Woj" firstAttribute="centerY" secondItem="2tE-B4-vkJ" secondAttribute="centerY" id="MEf-th-3Sp"/>
+                            <constraint firstItem="QeE-XA-bXy" firstAttribute="leading" secondItem="4xT-xp-Woj" secondAttribute="leading" id="Mam-3l-HeU"/>
+                            <constraint firstItem="4xT-xp-Woj" firstAttribute="centerX" secondItem="2tE-B4-vkJ" secondAttribute="centerX" id="PVb-Vm-2s6"/>
+                            <constraint firstItem="4xT-xp-Woj" firstAttribute="top" secondItem="QeE-XA-bXy" secondAttribute="bottom" constant="20" id="fOH-AW-HcP"/>
+                            <constraint firstItem="sKm-tA-Z3x" firstAttribute="centerX" secondItem="2tE-B4-vkJ" secondAttribute="centerX" id="ici-Ed-Q3n"/>
+                            <constraint firstItem="sKm-tA-Z3x" firstAttribute="top" secondItem="4xT-xp-Woj" secondAttribute="bottom" constant="20" id="xuV-Kr-BiQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2tE-B4-vkJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zg9-I0-fIg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EEF-0y-Loa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="OgH-J7-LQe" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="255.19999999999999" y="103.89805097451276"/>
+        </scene>
+        <!--Another View Controller-->
+        <scene sceneID="7W5-HL-lyK">
+            <objects>
+                <viewController id="0Qr-um-gJ9" customClass="AnotherViewController" customModule="UIImageZooming" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0dE-LQ-TNN">
+                        <rect key="frame" x="0.0" y="0.0" width="340" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fe-4p-wGY">
+                                <rect key="frame" x="4" y="64" width="336" height="736"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Quw-uK-Fy6">
+                                        <rect key="frame" x="0.0" y="0.0" width="336" height="1000"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0YI-91-Q7D">
+                                                <rect key="frame" x="145" y="697" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flower" translatesAutoresizingMaskIntoConstraints="NO" id="EZr-v1-1JS">
+                                                <rect key="frame" x="0.0" y="0.0" width="336" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="1LH-rC-OUb"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MeK-9Y-kcY">
+                                                <rect key="frame" x="124.5" y="465" width="87" height="70"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your nickname" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eLS-MH-7m1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q4l-jL-XMo">
+                                                        <rect key="frame" x="0.0" y="40" width="87" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="87" id="vPi-Gq-sMt"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYT-WK-VY0">
+                                                <rect key="frame" x="117" y="308" width="102.5" height="49"/>
+                                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="41"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="MeK-9Y-kcY" firstAttribute="centerY" secondItem="Quw-uK-Fy6" secondAttribute="centerY" id="58V-N3-IYL"/>
+                                            <constraint firstItem="sYT-WK-VY0" firstAttribute="centerX" secondItem="Quw-uK-Fy6" secondAttribute="centerX" id="5WB-Gt-zyL"/>
+                                            <constraint firstItem="EZr-v1-1JS" firstAttribute="leading" secondItem="Quw-uK-Fy6" secondAttribute="leading" id="FBa-5p-8pl"/>
+                                            <constraint firstAttribute="trailing" secondItem="EZr-v1-1JS" secondAttribute="trailing" id="Nyk-By-LFK"/>
+                                            <constraint firstItem="MeK-9Y-kcY" firstAttribute="centerX" secondItem="Quw-uK-Fy6" secondAttribute="centerX" id="SqU-rU-sa5"/>
+                                            <constraint firstItem="sYT-WK-VY0" firstAttribute="top" secondItem="EZr-v1-1JS" secondAttribute="bottom" constant="8" id="WCc-iA-loV"/>
+                                            <constraint firstItem="EZr-v1-1JS" firstAttribute="top" secondItem="Quw-uK-Fy6" secondAttribute="top" id="WXQ-gT-h3u"/>
+                                            <constraint firstAttribute="height" constant="1000" id="bSq-le-17n"/>
+                                            <constraint firstItem="q4l-jL-XMo" firstAttribute="centerX" secondItem="Quw-uK-Fy6" secondAttribute="centerX" id="wag-8C-thA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Quw-uK-Fy6" firstAttribute="leading" secondItem="6fe-4p-wGY" secondAttribute="leading" id="6aM-5G-AvG"/>
+                                    <constraint firstAttribute="bottom" secondItem="Quw-uK-Fy6" secondAttribute="bottom" id="BJF-jO-jhc"/>
+                                    <constraint firstItem="Quw-uK-Fy6" firstAttribute="top" secondItem="6fe-4p-wGY" secondAttribute="top" id="Bwu-Om-ghO"/>
+                                    <constraint firstItem="Quw-uK-Fy6" firstAttribute="width" secondItem="6fe-4p-wGY" secondAttribute="width" id="MQE-MU-riD"/>
+                                    <constraint firstItem="Quw-uK-Fy6" firstAttribute="leading" secondItem="6fe-4p-wGY" secondAttribute="leading" id="lUf-Ev-eKw"/>
+                                    <constraint firstAttribute="trailing" secondItem="Quw-uK-Fy6" secondAttribute="trailing" id="nmA-D4-3qj"/>
+                                    <constraint firstAttribute="bottom" secondItem="Quw-uK-Fy6" secondAttribute="bottom" id="uJX-gA-kVh"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aVQ-Qb-yww" firstAttribute="bottom" secondItem="6fe-4p-wGY" secondAttribute="bottom" id="7M9-mb-8kZ"/>
+                            <constraint firstItem="aVQ-Qb-yww" firstAttribute="trailing" secondItem="6fe-4p-wGY" secondAttribute="trailing" id="C08-TW-GYY"/>
+                            <constraint firstItem="6fe-4p-wGY" firstAttribute="leading" secondItem="aVQ-Qb-yww" secondAttribute="leading" constant="4" id="Lfj-08-zY6"/>
+                            <constraint firstItem="6fe-4p-wGY" firstAttribute="top" secondItem="aVQ-Qb-yww" secondAttribute="top" id="eIF-vc-Pw3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aVQ-Qb-yww"/>
+                    </view>
+                    <size key="freeformSize" width="340" height="800"/>
+                    <connections>
+                        <outlet property="myButton" destination="0YI-91-Q7D" id="wnB-sw-PNY"/>
+                        <outlet property="myScrollView" destination="6fe-4p-wGY" id="xla-Hm-RGj"/>
+                        <outletCollection property="textFields" destination="eLS-MH-7m1" collectionClass="NSMutableArray" id="LQJ-uk-LTD"/>
+                        <outletCollection property="textFields" destination="q4l-jL-XMo" collectionClass="NSMutableArray" id="iXb-9K-Xct"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="528-hE-zWl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004.8" y="-280.65967016491754"/>
+        </scene>
+        <!--ManualVC-->
+        <scene sceneID="xwl-DK-oEO">
+            <objects>
+                <viewController id="jdp-h1-ukU" customClass="ManualVC" customModule="UIImageZooming" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ODe-MD-h9Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fyK-ha-oRi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zcO-y2-2Ga" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="964"/>
+        </scene>
+        <!--Image Zoom View Controller-->
+        <scene sceneID="Foc-bk-i5X">
+            <objects>
+                <viewController id="f8v-xQ-oJ4" customClass="ImageZoomViewController" customModule="UIImageZooming" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tcy-xf-Uqr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yyD-ae-NtO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4fP-48-7uf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1084" y="869"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Qc9-qN-BTR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mrE-Hk-PjU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EQE-JI-a5g">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kmD-Kk-FST" kind="relationship" relationship="rootViewController" id="h9v-4I-quW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oAr-Pa-D5F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-609" y="104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="flower" width="4000" height="2400"/>
+    </resources>
+</document>
